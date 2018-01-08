@@ -146,5 +146,72 @@ var data = {
         'city': 'Hawkins, Indiana'
       }
     ]
+  },
+  'greys': {
+    'characters': [
+      {
+        'name': 'Meredith Grey',
+        'picture': 'img/greysanatomy/meredith.jpg',
+        'role': 'Intern',
+        'hospital': 'Seattle Grace Hospital',
+        'city': 'Seattle'
+      },
+      {
+        'name': 'Cristina Yang',
+        'picture': 'img/greysanatomy/cristina.jpg',
+        'role': 'Intern',
+        'hospital': 'Seattle Grace Hospital',
+        'city': 'Seattle'
+      },
+      {
+        'name': 'Izzie Stevens',
+        'picture': 'img/greysanatomy/izzie.jpg',
+        'role': 'Intern',
+        'hospital': 'Seattle Grace Hospital',
+        'city': 'Seattle'
+      },
+      {
+        'name': 'Alex Karev',
+        'picture': 'img/greysanatomy/alex.jpg',
+        'role': 'Intern',
+        'hospital': 'Seattle Grace Hospital',
+        'city': 'Seattle'
+      },
+      {
+        'name': 'George O Malley',
+        'picture': 'img/greysanatomy/george.jpg',
+        'role': 'Intern',
+        'hospital': 'Seattle Grace Hospital',
+        'city': 'Seattle'
+      },
+      {
+        'name': 'Miranda Bailey ',
+        'picture': 'img/greysanatomy/bailey.jpg',
+        'role': 'Resident',
+        'hospital': 'Seattle Grace Hospital',
+        'city': 'Seattle'
+      },
+      {
+        'name': 'Richard Webber ',
+        'picture': 'img/greysanatomy/richard.jpg',
+        'role': 'Chief of Surgery',
+        'hospital': 'Seattle Grace Hospital',
+        'city': 'Seattle'
+      },
+      {
+        'name': 'Preston Burke',
+        'picture': 'img/greysanatomy/preston.jpg',
+        'role': 'Heart surgeon',
+        'hospital': 'Seattle Grace Hospital',
+        'city': 'Seattle'
+      },
+      {
+        'name': 'Derek Shepherd',
+        'picture': 'img/greysanatomy/derek.jpg',
+        'role': 'Neurosurgeon',
+        'hospital': 'Seattle Grace Hospital',
+        'city': 'Seattle'
+      }
+    ]
   }
 }

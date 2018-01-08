@@ -5,3 +5,8 @@
 .btn {
   margin: 2em 0;
 }
+
+img {
+	max-width: 200px;
+	height: auto;
+}

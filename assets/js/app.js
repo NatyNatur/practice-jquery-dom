@@ -21,6 +21,7 @@ $(document).ready(() => {
   var breaking = data.breakingbad.characters;
   var howtoget = data.howtoget.characters;
   var stranger = data.stranger.characters;
+  var anatomy = data.greys.characters;
 
 /*
 * Ahora comenzamos con el contenido. Cuando se le haga click al botón de Gossip girl, mostraremos
@@ -39,7 +40,7 @@ $(document).ready(() => {
       * se borra inmediatamente todo el contenido de breaking bad y se genera el de gossip girl
       * cada uno en su div correspondiente
       */
-      $('.breaking, .how, .stranger, .all').empty(); //a los divs con esas clases les remueve todos sus hijos
+      $('.breaking, .how, .stranger, .greys, .all').empty(); //a los divs con esas clases les remueve todos sus hijos
       /*
       * Le indicamos que en cada iteración, es decir cuando pase por cada personaje, genera la
       * siguiente estructura por cada uno, sacando así el dato de nombre, colegio, ciudad y foto,
@@ -67,7 +68,7 @@ $(document).ready(() => {
 
   $('.btn-breaking').click(function(){
     for (var i = 0; i < breaking.length; i++) {
-      $('.gossip, .how, .stranger, .all').empty();
+      $('.gossip, .how, .stranger, .greys, .all').empty();
       $('.breaking').append('<div class="row character">' +
         '<div class= "col-md-6 text-center">'+
         '<img src="assets/' + breaking[i].picture + '">' +
@@ -82,7 +83,7 @@ $(document).ready(() => {
 
   $('.btn-how').click(function(){
     for (var i = 0; i < howtoget.length; i++) {
-      $('.gossip, .breaking, .stranger, .all').empty();
+      $('.gossip, .breaking, .stranger, greys, .all').empty();
       $('.how').append('<div class="row character">' +
         '<div class= "col-md-6 text-center">'+
         '<img src="assets/' + howtoget[i].picture + '">' +
@@ -97,7 +98,7 @@ $(document).ready(() => {
 
   $('.btn-stranger').click(function(){
     for (var i = 0; i < stranger.length; i++) {
-      $('.gossip, .breaking, .how, .all').empty();
+      $('.gossip, .breaking, .how, .greys, .all').empty();
       $('.stranger').append('<div class="row character">' +
         '<div class= "col-md-6 text-center">'+
         '<img src="assets/' + stranger[i].picture + '">' +
@@ -105,6 +106,22 @@ $(document).ready(() => {
         '<div class= "col-md-6">'+
         '<h3>' + stranger[i].name + '</h3>' +
         '<p>City: ' + stranger[i].city + '</p>' +
+        '</div>' +
+        '</div>')
+    }
+  })
+
+  $('.btn-greys').click(function(){
+    for (var i = 0; i < anatomy.length; i++) {
+      $('.gossip, .breaking, .how, .stranger, .all').empty();
+      $('.greys').append('<div class="row character">' +
+        '<div class= "col-md-6 text-center">'+
+        '<img src="assets/' + anatomy[i].picture + '">' +
+        '</div>' +
+        '<div class= "col-md-6">'+
+        '<h3>' + anatomy[i].name + '</h3>' +
+        '<p>Works at: ' + anatomy[i].hospital + '</p>' +
+        '<p>Role: ' + anatomy[i].role + '</p>' +
         '</div>' +
         '</div>')
     }
@@ -119,7 +136,7 @@ $(document).ready(() => {
   var allCharacters = [];
 
   $('.btn-all').click(function() {
-    $('.gossip, .breaking, .how, .stranger').empty();
+    $('.gossip, .breaking, .how, .stranger, .greys').empty();
   /*
   * Debemos recorrer cada de uno de los objetos presente en la data (gossip, breakingbad,
   * howtoget y stranger) y pushear al array allCharacters todos los objetos pertenecientes a
